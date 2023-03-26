@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:trailtales/models/tale_model.dart';
 import 'package:trailtales/screens/taleviewscreen.dart';
 
-class TaleThumbnail extends StatefulWidget {
-  const TaleThumbnail({Key? key}) : super(key: key);
+class TaleThumbnail extends StatelessWidget {
+  final TaleModel tale;
 
-  @override
-  State<TaleThumbnail> createState() => _TaleThumbnailState();
-}
+  const TaleThumbnail({Key? key, required this.tale}) : super(key: key);
 
-class _TaleThumbnailState extends State<TaleThumbnail> {
   @override
   Widget build(BuildContext context) {
     return Padding(
