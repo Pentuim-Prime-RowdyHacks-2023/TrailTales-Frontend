@@ -62,9 +62,9 @@ class _MainMenuControllerState extends State<MainMenuController> {
               // User canceled the picker
             }
           },
-          tooltip: 'Select a media file',
           child: const Icon(Icons.add),
           backgroundColor: Colors.green,
+          foregroundColor: Colors.white,
         ),
     );
   }

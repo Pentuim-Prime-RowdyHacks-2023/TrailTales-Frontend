@@ -36,8 +36,13 @@ class TaleThumbnail extends StatelessWidget {
                   height: 100,
                   alignment: Alignment.center,
                   child: Text(
-                    "Title",
-                    style: Theme.of(context).textTheme.titleLarge!.copyWith(color: Colors.black),
+                    tale.title ?? "Exploration",
+                    style: Theme.of(context).textTheme.titleLarge!.copyWith(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w900,
+                          letterSpacing: 5,
+                          fontSize: 30,
+                        ),
                   ),
                 ),
               ],
